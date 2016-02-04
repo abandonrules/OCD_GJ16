@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1280mm"
+   height="720mm"
+   viewBox="0 0 1280 720"
+   id="svg7076"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="bob has issues.svg">
+  <defs
+     id="defs7078" />
+  <sodipodi:namedview
+     inkscape:document-units="mm"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.054269795"
+     inkscape:cx="3924.2988"
+     inkscape:cy="225.79424"
+     inkscape:current-layer="layer1"
+     id="namedview7080"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="751"
+     inkscape:window-x="37"
+     inkscape:window-y="63"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7082">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,510)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:119.77015686px;line-height:125%;font-family:'Nanum Brush Script';-inkscape-font-specification:'Nanum Brush Script, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="706.46387"
+       y="-225.1115"
+       id="text8206"
+       sodipodi:linespacing="125%"
+       transform="scale(0.89787934,1.1137354)"><tspan
+         sodipodi:role="line"
+         id="tspan8208"
+         x="723.18958"
+         y="-225.1115">Bob lives in a different world </tspan><tspan
+         sodipodi:role="line"
+         x="723.18958"
+         y="-75.398804"
+         id="tspan9954">than us... he suffers from </tspan><tspan
+         sodipodi:role="line"
+         x="706.46387"
+         y="74.313904"
+         id="tspan8210">Obsessive Compulsion Disorder</tspan></text>
+  </g>
+</svg>

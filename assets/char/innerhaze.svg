@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg4171"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="innerhaze.svg"
+   inkscape:export-filename="C:\Users\kukoo\Dropbox\gm16\ocd\innerhaze.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4173">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4798">
+      <stop
+         style="stop-color:#000000;stop-opacity:0"
+         offset="0"
+         id="stop4800" />
+      <stop
+         id="stop4806"
+         offset="0.43591735"
+         style="stop-color:#000000;stop-opacity:0" />
+      <stop
+         style="stop-color:#630000;stop-opacity:0.08627451"
+         offset="0.82629925"
+         id="stop4808" />
+      <stop
+         style="stop-color:#ff0000;stop-opacity:0.3815029"
+         offset="1"
+         id="stop4802" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4784">
+      <stop
+         style="stop-color:#ff0000;stop-opacity:1"
+         offset="0"
+         id="stop4786" />
+      <stop
+         style="stop-color:#ff0000;stop-opacity:0"
+         offset="1"
+         id="stop4788" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4784"
+       id="radialGradient4790"
+       cx="349.51267"
+       cy="603.85445"
+       fx="349.51267"
+       fy="603.85445"
+       r="169.70608"
+       gradientTransform="translate(0,-1.2111225e-4)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4798"
+       id="radialGradient4804"
+       cx="349.51279"
+       cy="603.85449"
+       fx="349.51279"
+       fy="603.85449"
+       r="96.974648"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="252.67573"
+     inkscape:cy="366.17322"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4176">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:url(#radialGradient4790);fill-opacity:1;stroke:none"
+       d="M 349.32812 434.14844 A 169.70563 169.70563 0 0 0 179.80664 603.97656 A 169.70563 169.70563 0 0 0 349.57422 773.56055 A 169.70563 169.70563 0 0 0 519.21875 603.85547 L 519.21875 603.60938 A 169.70563 169.70563 0 0 0 349.32812 434.14844 z M 349.4082 506.88086 A 96.974648 96.974648 0 0 1 446.48828 603.71484 L 446.48828 603.85547 A 96.974648 96.974648 0 0 1 349.54883 700.83008 A 96.974648 96.974648 0 0 1 252.53906 603.92383 A 96.974648 96.974648 0 0 1 349.4082 506.88086 z "
+       id="path4730" />
+    <path
+       style="fill:url(#radialGradient4804);fill-opacity:1;stroke:none"
+       id="path4730-1"
+       sodipodi:type="arc"
+       sodipodi:cx="349.51279"
+       sodipodi:cy="603.85449"
+       sodipodi:rx="96.974648"
+       sodipodi:ry="96.974648"
+       sodipodi:start="0"
+       sodipodi:end="6.2817367"
+       sodipodi:open="true"
+       d="m 446.48743,603.85449 a 96.974648,96.974648 0 0 1 -96.93952,96.97464 96.974648,96.974648 0 0 1 -97.00975,-96.9044 96.974648,96.974648 0 0 1 96.86927,-97.04483 96.974648,96.974648 0 0 1 97.0799,96.83411" />
+  </g>
+</svg>
