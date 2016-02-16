@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Phaser Example Runner</title>
+        <meta name="viewport" content="initial-scale=1 maximum-scale=1 user-scalable=0 minimal-ui" />
+        <script src="js/jquery-2.0.3.min.js" type="text/javascript"></script>
+        <script src="phaser/phaser.2.4.4.min.js" type="text/javascript"></script>
+        <script src="phaser/blob.js" type="text/javascript"></script>
+        <script src="phaser/canvas-to-blob.js" type="text/javascript"></script>
+        <script src="phaser/filesaver.js" type="text/javascript"></script>
+        <script src="phaser/embed.js" type="text/javascript"></script>
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+                font-family: Arial;
+                font-size: 14px;
+                background-color: #000000;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="phaser-example"></div>
+
+        <script type="text/javascript">
+
+        var IDE_HOOK = false;
+        var VERSION = '2.4.4';
+
+        
+var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create, update: update, render: render });
+
+function preload() {
+
+    game.load.image('background','assets/tests/debug-grid-1920x1920.png');
+    game.load.image('mask','assets/bg/house_mask.png');
+    //game.load.image('background','assets/bg/house_background-1920X1120.png');
+    game.load.image('title','assets/bg/Title V2.png');
+    game.load.image('credit','assets/bg/credits_bg.png');
+    game.load.spritesheet('player','assets/char/bob_sheet-64X64.png',64,64);
+
+
+}
+
+var player;
+var cursors;
+
+function create() {
+
+    game.add.image(0, 0, 'background');
+    game.world.setBounds(0, 0, 1920, 1120);
+    game.physics.startSystem(Phaser.Physics.P2JS);
+     cursors = game.input.keyboard.createCursorKeys();
+     player = game.add.sprite(game.world.centerX, game.world.centerY, 'player');
+     game.physics.p2.enable(player);
+
+    //  This tween will wait 2 seconds before starting
+    title = game.add.image(0, 0, 'title');
+    var titleTW = game.add.tween(title).to( { alpha: 0 }, 2000, "Linear", true, 2000);
+    titleTW.onStart.add(started, this);
+    titleTW.onComplete.add(completed, this);
+    create_player();
+
+}
+
+function started() {
+
+    //create_player();
+
+}
+
+function completed() {
+    //create_player();
+}
+
+
+
+function create_player() {
+     //player = game.add.sprite(game.world.centerX, game.world.centerY, 'player');
+     //game.physics.p2.enable(player);
+     reset_player();
+     game.camera.focusOnXY(player.x-1300, player.y-1300 );
+     game.camera.follow(player);
+     game.camera.deadzone = new Phaser.Rectangle(400, 400, 100, 100);
+}
+
+function reset_player() {
+    player.reset(500, 120);
+}
+function show_credits(){
+    credit = game.add.image(player.x-200, player.y-200, 'credit');
+    credit_tw = game.add.tween(credit).to( { alpha: 0 }, 2000, "Linear", true, 2000)
+    
+}
+
+function update() {
+    keyC = game.input.keyboard.addKey(Phaser.Keyboard.C);
+    keyC.onDown.add(show_credits, this);
+    keyX = game.input.keyboard.addKey(Phaser.Keyboard.X);
+    keyX.onDown.add(reset_player, this);
+
+    player.body.setZeroVelocity();
+
+    if (cursors.up.isDown)
+    {
+        player.body.moveUp(300)
+    }
+    else if (cursors.down.isDown)
+    {
+        player.body.moveDown(300);
+    }
+
+    if (cursors.left.isDown)
+    {
+        player.body.velocity.x = -300;
+    }
+    else if (cursors.right.isDown)
+    {
+        player.body.moveRight(300);
+    }
+    if (game.input.activePointer.withinGame)
+    {
+        game.input.enabled = true;
+        game.stage.backgroundColor = '#736357';
+    }
+    else
+    {
+        game.input.enabled = false;
+        game.stage.backgroundColor = '#731111';
+    }
+
+}
+
+function render() {
+
+    var zone = game.camera.deadzone;
+
+    //game.context.fillStyle = 'rgba(255,0,0,0.6)';
+    //game.context.fillRect(zone.x, zone.y, zone.width, zone.height);
+
+    game.debug.cameraInfo(game.camera, 32, 32);
+    game.debug.spriteCoords(player, 32, 500);
+
+}
+        
+        </script>
+
+    </body>
+</html>
