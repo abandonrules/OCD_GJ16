@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>Phaser Example Runner</title>
+        <title>OCD</title>
         <meta name="viewport" content="initial-scale=1 maximum-scale=1 user-scalable=0 minimal-ui" />
         <script src="js/jquery-2.0.3.min.js" type="text/javascript"></script>
         <script src="phaser/phaser.2.4.4.min.js" type="text/javascript"></script>
@@ -22,7 +22,7 @@
         </style>
     </head>
     <body>
-        <div id="phaser-example"></div>
+        <div id="OCD"></div>
 
         <script type="text/javascript">
 
@@ -30,13 +30,13 @@
         var VERSION = '2.4.4';
 
         
-var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create, update: update, render: render });
+var game = new Phaser.Game(1024, 768, Phaser.CANVAS, 'OCD', { preload: preload, create: create, update: update, render: render });
 
 function preload() {
 
-    game.load.image('background','assets/tests/debug-grid-1920x1920.png');
+    //game.load.image('background','assets/tests/debug-grid-1920x1920.png');
     game.load.image('mask','assets/bg/house_mask.png');
-    //game.load.image('background','assets/bg/house_background-1920X1120.png');
+    game.load.image('background','assets/bg/house_background-1920X1120.png');
     game.load.image('title','assets/bg/Title V2.png');
     game.load.image('credit','assets/bg/credits_bg.png');
     game.load.spritesheet('player','assets/char/bob_sheet-64X64.png',64,64);
